@@ -1,11 +1,11 @@
 class Graph:
     def __init__(self):
-        self.vertices = set()
-        self.edges = []
-        self.arcs = []
-        self.required_vertices = set()
-        self.required_edges = []
-        self.required_arcs = []
+        self.vertices = set()               # Armazena os vértices (nós) do grafo.
+        self.edges = []                     # Lista de arestas bidirecionais (tuplas).
+        self.arcs = []                      # Lista de arcos unidirecionais (tuplas).
+        self.required_vertices = set()      # Vértices que exigem serviços.
+        self.required_edges = []            # Arestas que exigem serviços.
+        self.required_arcs = []             # Arcos que exigem serviços.
 
 
 def read_graph(filename):
