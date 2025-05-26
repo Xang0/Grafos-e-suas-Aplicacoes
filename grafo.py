@@ -51,8 +51,8 @@ def read_graph(filename):
             # Processar metadados
             if line.startswith('Depot Node:'):
                 depot = parts[1].strip()
+                graph.depot = depot
                 graph.vertices.add(depot)
-                graph.required_vertices.add(depot)  # Depot é um vértice requerido?
             
             # Processar seções
             elif current_section == 'required_nodes':
