@@ -201,7 +201,7 @@ def format_solution(routes, start_clock, end_clock, dist, idx, services_map, gra
         formatted_routes.append((load, segs))
 
     # Header
-    out = [str(total_cost), str(len(formatted_routes)), str(start_clock), str(end_clock), '']
+    out = [str(total_cost), str(len(formatted_routes)), str(start_clock), str(end_clock)]
 
     # Body
     for idx_r, (load, segs) in enumerate(formatted_routes, start=1):
